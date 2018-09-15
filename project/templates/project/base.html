@@ -1,6 +1,17 @@
-<a href="{% url 'index' %}" style="text-decoration:none"><h1>Michael's Site</h1></a>
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'project/styles.css' %}"/>
+</head>
+
+<body>
+
+<a href="{% url 'index' %}"><img src="{% static 'project/logo.png' %}" alt="Logo"/></a>
+<a href="{% url 'index' %}" id="header"><h1>Michael's Site</h1></a>
 <title>{% block title %}{% endblock %} </title>
 
 {% block content %}
 
 {% endblock %}
+
+</body>

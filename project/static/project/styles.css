@@ -1,0 +1,46 @@
+#header {
+    text-decoration: none;
+}
+
+#header:link {
+    color: orange;
+}
+
+/* visited link */
+#header:visited {
+    color: orange;
+}
+
+/* mouse over link */
+#header:hover {
+    color: orange;
+}
+
+/* selected link */
+#header:active {
+    color: orange;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+img {
+    width:128px;
+    height: 64px;
+}
