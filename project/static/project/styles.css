@@ -21,26 +21,61 @@
     color: orange;
 }
 
-a:link {
-    color: red;
+
+img.logo {
+    width:400px;
+    height: 200px;
 }
 
-/* visited link */
-a:visited {
-    color: red;
+a.navbar-brand {
+    height: 200px;
+    padding:0;
+    padding-right: 25px;
 }
 
-/* mouse over link */
-a:hover {
-    color: hotpink;
+
+
+ul.nav > li > a {
+    color: black;
+    padding: 150px 15px 30px 15px;
 }
 
-/* selected link */
-a:active {
-    color: blue;
+.navbar {
+    border: 0;
+    border-radius:0;
+    border-bottom:1px solid black;
+
+    background:white;
+    font-size: 18px;
+    margin:25px;
+
+}
+/*
+ul.nav-ul {
+    list-style-type: none;
+    font-weight: bold;
 }
 
-img {
-    width:128px;
-    height: 64px;
+li {
+    display: inline;
 }
+.navbar{
+    overflow: auto;
+
+    background-color: #ededed;
+}
+
+a.no-dec {
+    color:black;
+    text-decoration: none
+}
+a.no-dec:visited {
+    color: black;
+}
+
+.nav-element {
+    float: left;
+}
+.clear {
+    clear: both;
+}*/
