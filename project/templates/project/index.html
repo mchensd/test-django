@@ -7,6 +7,16 @@
 <div id="Content" style="">
     <h1>Welcome to Wired League</h1>
     <h3>Visit <a target=_blank href="https://wiredleague.org">wiredleague.org</a> for our new and updated website. </h3>
+    <p>Current Counter: {{ counter.count }}</p>
+    <form action="{% url 'increment' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">increment instantly</button>
+    </form>
+
+    <form action="{% url 'increment_delay' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">increment after 10 seconds</button>
+    </form>
 </div>
 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:50%;">
     <!-- Indicators -->

@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'project',
+    'project.apps.ProjectConfig',
+    'django_extensions',
+    'background_task',
+
+
 
 ]
 
@@ -79,8 +83,13 @@ WSGI_APPLICATION = 'TestSite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'TestSite',
+        'USER': 'postgres',
+        'PASSWORD': 'ch0c0l0te',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+
     }
 }
 
