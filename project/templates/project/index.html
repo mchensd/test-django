@@ -8,6 +8,7 @@
     <h1>Welcome to Wired League</h1>
     <h3>Visit <a target=_blank href="https://wiredleague.org">wiredleague.org</a> for our new and updated website. </h3>
     <p>Current Counter: {{ counter.count }}</p>
+    <p>Number of Threads: {{ thread.count }}</p>
     <form action="{% url 'increment' %}" method="post">
         {% csrf_token %}
         <button type="submit">increment instantly</button>

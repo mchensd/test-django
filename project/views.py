@@ -12,7 +12,9 @@ from django.http import HttpResponse
 
 def index(request):
     counter = Counter.objects.get(pk=1)
-    return render(request, 'project/index.html', {'counter': counter})
+    thread = Counter.objects.get(name='num_threads')
+    return render(request, 'project/index.html', {'counter': counter, 'thread':thread})
+
 
 
 def about(request):
@@ -40,8 +42,22 @@ def increment_delay_view(request):
 
 def increment_delay():
     print("sleeping")
+
+    t = Counter.objects.get(name='num_threads')
+    t.count += 1
+
+    t.save()
+    print('adding', t.count)
     time.sleep(10)
-    print('done sleeping')
+    t = Counter.objects.get(name='num_threads')
+    print('done sleeping', t.count)
+
     c = Counter.objects.get(pk=1)
     c.count+=1
     c.save()
+
+    t.count -= 1
+    print('subtracted')
+    t.save()
+    print("saved")
+    print(t.count)
