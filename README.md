@@ -1,4 +1,2 @@
 # test-django
-Test to host Django on Pythonanywhere -- [mchensd.pythonanywhere.com](http://mchensd.pythonanywhere.com)
-
-The website is a draft of the website for my nonprofit, Wired League.
+Old draft website for my nonprofit, Wired League, using Django-- [mchensd.pythonanywhere.com](http://mchensd.pythonanywhere.com)
